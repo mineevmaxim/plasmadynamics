@@ -1,0 +1,108 @@
+.description-card {
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    padding: 40px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.description-card__header {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.description-card__header-point {
+    width: 40px;
+    height: 40px;
+}
+
+.description-card__header-header {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.description-card__header-header span {
+    color: #FF6A00;
+}
+
+.description-card__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: space-around;
+}
+
+.desciption-card__content-column {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+.description-card__content-card {
+    width: 440px;
+    height: 264px;
+    background-color: #101010;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 32px 24px;
+    border-radius: 16px;
+}
+
+.description-card__content-card__header {
+    font-size: 36px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.description-card__content-card__text {
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 28px;
+    text-wrap: wrap;
+    color: #E1E1E1;
+}
+
+.description-card__content-card__image {
+    width: 373px;
+    height: 373px;
+}
+
+.statistics-card {
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    padding: 40px 24px;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.statistics-card__column {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.statistics-card__column-header {
+    border-bottom: 2px solid #E1E1E1;
+    padding-bottom: 24px;
+}
+
+.statistics-card__column-header h2 {
+    font-size: 96px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.statistics-card__column-text {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+    text-align: left;
+}
