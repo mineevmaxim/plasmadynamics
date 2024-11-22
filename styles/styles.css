@@ -1,0 +1,14 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 1440px;
+    justify-self: center;
+}
+
+.container {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}

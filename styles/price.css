@@ -1,0 +1,146 @@
+.price-card {
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    padding: 40px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.price-card__header {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.price-card__header-point {
+    width: 40px;
+    height: 40px;
+}
+
+.price-card__header-header {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.price-card__header-header span {
+    color: #FF6A00;
+}
+
+.price-card__text {
+    font-size: 18px;
+    color: #848484
+}
+
+.price-card__content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+/* todo: adaptive */
+.price-card__content-image {
+    width: 330px;
+    height: 450px;
+}
+
+.form-card {
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    padding: 40px 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form-card__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+
+.form-card__content-header {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.form-card__content-header__point {
+    width: 40px;
+    height: 40px;
+}
+
+.form-card__content-header__header {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.form-card__content-form__form {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.form-card__content-form__form-inputs {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.form-card__content-form__form-inputs-left {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form-card__content-form__form-inputs-left__input {
+    width: 320px;
+    height: 60px;
+    padding: 16px 24px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    background-color: #F0F0F0;
+    color: #848484;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.form-card__content-form__form-inputs-right__input {
+    width: 360px;
+    height: 228px;
+    background-color: #F0F0F0;
+    padding: 16px 24px;
+    color: #848484;
+    font-size: 18px;
+    font-weight: 100;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    resize: none;
+}
+
+.form-card__content-form__form-button {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+.form-card__content-form__form-button__button {
+    background-color: #101010;
+    padding: 16px 32px;
+    border-radius: 24px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 200;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.form-card__content-form__form-button__text {
+    color: #848484;
+    font-size: 14px;
+    font-weight: 400;
+}
