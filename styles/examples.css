@@ -1,0 +1,63 @@
+.examples-card {
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    padding: 40px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.examples-card__header {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.examples-card__header-point {
+    width: 40px;
+    height: 40px;
+}
+
+.examples-card__header-header {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.examples-card__content {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.examples-card__content-header {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+}
+
+.examples-card__content-text {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+    color: #848484;
+}
+
+.examples-card__content-left {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-wrap: wraps;
+}
+
+.examples-card__content-right {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.examples-card__content-right__item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-wrap: wraps;
+}

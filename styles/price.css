@@ -102,9 +102,16 @@
     outline: none;
     border: none;
     background-color: #F0F0F0;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.form-card__content-form__form-inputs-left__input::placeholder {
     color: #848484;
     font-size: 18px;
     font-weight: 100;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
 }
 
 .form-card__content-form__form-inputs-right__input {
@@ -112,7 +119,6 @@
     height: 228px;
     background-color: #F0F0F0;
     padding: 16px 24px;
-    color: #848484;
     font-size: 18px;
     font-weight: 100;
     border-radius: 8px;
@@ -121,11 +127,23 @@
     resize: none;
 }
 
+.form-card__content-form__form-inputs-right__input::placeholder {
+    color: #848484;
+    font-size: 18px;
+    font-weight: 100;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+}
+
 .form-card__content-form__form-button {
     display: flex;
     flex-direction: column;
     gap: 16px;
     align-items: center;
+}
+
+.form-card__content-form__form-button__button:hover {
+    cursor: pointer;
 }
 
 .form-card__content-form__form-button__button {

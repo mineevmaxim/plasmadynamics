@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/styles/reset.css">
     <link rel="stylesheet" href="/styles/styles.css">
     <link rel="stylesheet" href="/styles/price.css">
+    <link rel="stylesheet" href="/styles/examples.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
@@ -45,7 +46,33 @@
         </section>
         <section class="examples" id="examples">
             <div class="container">
-                Примеры
+                <div class="examples-card">
+                    <div class="examples-card__header">
+                        <img src="assets/point.svg" alt="point" class="contacts-card__header-point">
+                        <h1 class="examples-card__header-header">
+                            Примеры работ
+                        </h1>
+                    </div>
+                    <div class="examples-card__content">
+                        <div class="examples-card__content-left">
+                            <img src="/assets/example.png" alt="example">
+                            <h3 class="examples-card__content-header">Износостойкое покрытие</h3>
+                            <p class="examples-card__content-text">Нанесение износостойкого, жаростойкого и термобарьерного композитного покрытия на фурмы доменных печей для компании «НЛМК»</p>
+                        </div>
+                        <div class="examples-card__content-right">
+                            <div class="examples-card__content-right__item">
+                                <img src="/assets/example2.png" alt="example2">
+                                <h3 class="examples-card__content-header">Антифрикционное покрытие</h3>
+                                <p class="examples-card__content-text">Нанесение антифрикционного покрытия на основе бронзы на различные узлы деталей машин</p>
+                            </div>
+                            <div class="examples-card__content-right__item">
+                                <img src="/assets/example3.png" alt="example3">
+                                <h3 class="examples-card__content-header">Электропроводящее покрытие</h3>
+                                <p class="examples-card__content-text">Нанесение электропроводящего покрытия на основе Zn на изоляторы</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="price" id="price">
@@ -87,17 +114,14 @@
                                 <div class="form-card__content-form__form-inputs">
                                     <div class="form-card__content-form__form-inputs-left">
                                         <input type="text" placeholder="Имя" class="form-card__content-form__form-inputs-left__input">
-                                        <input type="text" placeholder="Почта" class="form-card__content-form__form-inputs-left__input">
-                                        <input type="text" placeholder="Номер телефона" class="form-card__content-form__form-inputs-left__input">
+                                        <input type="email" placeholder="Почта" class="form-card__content-form__form-inputs-left__input">
+                                        <input type="tel" placeholder="Номер телефона" class="form-card__content-form__form-inputs-left__input">
                                     </div>
                                     <div class="form-card__content-form__form-inputs-right">
                                         <textarea 
-                                            name="" 
-                                            id="" 
-                                            placeholder="Ваш вопрос"
                                             class="form-card__content-form__form-inputs-right__input"
-                                        >
-                                    </textarea>
+                                            placeholder="Ваш вопрос"
+                                        ></textarea>
                                     </div>
                                 </div>
                                 <div class="form-card__content-form__form-button">
