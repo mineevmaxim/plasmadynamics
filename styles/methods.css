@@ -1,0 +1,46 @@
+.method-cards-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.method-card {
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+    padding-bottom: 36px;
+    padding-left: 43px;
+    padding-right: 43px;
+    background-color: black;
+    border-radius: 24px;
+    width: 666px;
+}
+
+.method-img {
+    height: 272px;
+    width: auto;
+    border-radius: 24px;
+    margin-bottom: 16px;
+}
+
+.method-name {
+    color: #FFFFFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom: 8px;
+}
+
+.method-description {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #E1E1E1;
+}

@@ -1,0 +1,15 @@
+.services-card__description {
+    font-family: Manrope;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #101010;
+}
+
+.point-extensions {
+    display: flex;
+    align-self: center;
+}

@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/hero.css">
+    <link rel="stylesheet" href="/styles/about.css">
+    <link rel="stylesheet" href="/styles/methods.css">
     <link rel="stylesheet" href="/styles/contacts.css">
     <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="stylesheet" href="/styles/videos.css">
+    <link rel="stylesheet" href="/styles/companies.css">
     <link rel="stylesheet" href="/styles/reset.css">
     <link rel="stylesheet" href="/styles/styles.css">
     <link rel="stylesheet" href="/styles/price.css">
@@ -16,6 +21,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200..800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="main-header">
@@ -36,9 +43,160 @@
         </nav>
     </header>
     <main class="main" id="main">
+        <section class="hero" id="hero">
+            <div class="container">
+                <div class="hero-card">
+                    <div class="info-zone">
+                        <div class="city-button">
+                            <span class="city-button_text">
+                                Екатеринбург
+                            </span>
+                        </div>
+                        <div class="info-container">
+                            <h1 class="hero-header">Надежные покрытия<br>будущего - сегодня</h1>
+                            <div class="orange-circles">
+                                <img src="assets/orange-circles.svg" class="circles-img">
+                            </div>
+                            <p class="hero-description">Мы увеличим срок эксплуатации оборудования и снизим денежные затраты на его ремонт</p>
+                            <button class="navigation-button">
+                                <span class="navigation-button__text">Оставить заявку</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="img-zone">
+                        <img class="hero-img" src="assets/hero-img.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="companies" id="companies">
+            <div class="container wrap">
+                <div class="wrapper-super-el primary">
+                    <div class="wrapper_el">
+                        <a href="#">
+                            <img src="assets/company-logo1.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="wrapper_el">
+                        <a href="#">
+                            <img src="assets/company-logo2.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="wrapper_el">
+                        <a href="#">
+                            <img src="assets/ual.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="wrapper_el">
+                        <a href="#">
+                            <img src="assets/atom.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="wrapper_el">
+                        <a href="#">
+                            <img src="assets/zavod9.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="wrapper_el">
+                        <a href="#">
+                            <img src="assets/um.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="wrapper wrapper-super-el secondary">
+                    <div class="wrapper_el">
+                        <a href="#">
+                            <img src="assets/company-logo1.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="wrapper_el">
+                        <a href="#">
+                            <img src="assets/company-logo2.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="wrapper_el">
+                        <a href="#">
+                            <img src="assets/ual.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="wrapper_el">
+                        <a href="#">
+                            <img src="assets/atom.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="wrapper_el">
+                        <a href="#">
+                            <img src="assets/zavod9.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="wrapper_el">
+                        <a href="#">
+                            <img src="assets/um.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="about" id="about">
             <div class="container">
-                О нас
+                <div class="services-card">
+                    <div class="services-card__header">
+                        <img src="assets/point.svg" alt="point" class="services-card__header-point point-extensions">
+                        <h1 class="services-card__description">
+                            Занимаемся нанесением покрытий на любые поверхности с<br>использованиваем технологий плазменного распыления материала
+                        </h1>
+                    </div>
+                    <div class="image-section">
+                        <img src="assets/about-1.png" class="about-img">
+                        <img src="assets/about-2.png" alt="" class="about-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="methods" id="methods">
+            <div class="container">
+                <div class="services-card">
+                    <div class="services-card__header">
+                        <img src="assets/point.svg" alt="point" class="services-card__header-point">
+                        <h1 class="services-card__header-header">
+                            Наши методы нанесения покрытий
+                        </h1>
+                    </div>
+                    <div class="method-cards-section">
+                        <div class="method-card">
+                            <img src="assets/method-1.png" alt="" class="method-img">
+                            <h3 class="method-name">Плазменное напыление</h3>
+                            <p class="method-description">Технологический процесс, при котором напыляемый материал разогревается до жидкого состояния и переносится на обрабатываемую поверхность при помощи потока плазмы с высокой температурой. Данный метод позволяет эффективно формировать защитное покрытие и проводить восстановление изношенных частей металлических изделий.</p>
+                        </div>
+                        <div class="method-card">
+                            <img src="assets/method-2.png" alt="" class="method-img">
+                            <h3 class="method-name">Газопламенное напыление</h3>
+                            <p class="method-description">Технологический процесс, при котором присадочный материал подается к факелу пламени горелки, плавится, и сжатым воздухом распыляется на обрабатываемую поверхность, создавая на ней сплошное низкопористое металлопокрытие. Данный метод позволяет эффективно формировать защитное покрытие.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="methods" id="methods">
+            <div class="container">
+                <div class="services-card">
+                    <div class="services-card__header">
+                        <img src="assets/point.svg" alt="point" class="services-card__header-point">
+                        <h1 class="services-card__header-header">
+                            Процесс напыления
+                        </h1>
+                    </div>
+                    <div class="vide-area">
+                        <div class="video-card">
+                            <video class="video" src="videos/video1.mp4" controls poster="assets/preview1.jpg"></video>
+                            <h3 class="video-name">Процесс газопламенного напыления</h3>
+                        </div>
+                        <div class="video-card">
+                            <video class="video" src="videos/video2.mp4" controls poster="assets/preview1.jpg"></video>
+                            <h3 class="video-name">Процесс плазменного напыления</h3>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="services" id="services">

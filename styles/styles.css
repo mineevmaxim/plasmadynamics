@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
-    width: 1440px;
+
     justify-self: center;
     padding-top: 16px;
 }
@@ -13,3 +13,14 @@
     flex-direction: column;
     gap: 16px;
 }
+
+.image-section {
+    display: flex;
+    justify-content:space-around;
+}
+
+.about-img {
+    min-width: 666px;
+    height: auto;
+}
+
