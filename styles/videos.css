@@ -8,14 +8,15 @@
 .video-card {
     width: 666px;
     height: auto;
-    
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
 
 .video {
     width: 100%;
     height: 100%;
-    margin-bottom: 24px;
 }
 
 .video-name {
