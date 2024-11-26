@@ -17,11 +17,11 @@
 }
 
 .primary {
-    animation: primary 12s linear infinite;
+    animation: primary 20s linear infinite;
   }
   
 .secondary {
-    animation: secondary 12s linear infinite;
+    animation: secondary 20s linear infinite;
 }
 
 .companies {
