@@ -63,3 +63,12 @@ table {
 a {
     text-decoration: none;
 }
+
+a:hover {
+	color: #FF6A00;
+}
+
+button {
+	outline: none;
+    border: none;
+}

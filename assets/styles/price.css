@@ -144,6 +144,7 @@
 
 .form-card__content-form__form-button__button:hover {
     cursor: pointer;
+    background-color: #FF6A00;
 }
 
 .form-card__content-form__form-button__button {

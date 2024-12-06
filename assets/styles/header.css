@@ -41,14 +41,13 @@
     padding: 16px 32px 16px 32px;
     gap: 8px;
     border-radius: 24px;
-    opacity: 0px;
     background-color: #FFFFFF;
     font-family: "Manrope", sans-serif;
-    font-optical-sizing: auto;
     font-style: normal;
     color: #101010;
 }
 
 .navigation-button:hover {
     cursor: pointer;
+    background-color: #FF6A00;
 }
