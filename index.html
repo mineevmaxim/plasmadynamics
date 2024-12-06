@@ -20,10 +20,10 @@
     <link rel="stylesheet" href="assets/styles/description.css">
     <link rel="stylesheet" href="assets/styles/services.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200..800&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200..800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="main-header">
@@ -39,7 +39,7 @@
                     <li class="navigation-menu__item"><a class="navigation-menu__item-link" href="#examples">Примеры</a></li>
                     <li class="navigation-menu__item"><a class="navigation-menu__item-link" href="#contacts">Контакты</a></li>
                 </ul>
-                <button class="navigation-button">
+                <button class="navigation-button" id="header-button">
                     <span class="navigation-button__text">Оставить заявку</span>
                 </button>
             </nav>
@@ -61,7 +61,7 @@
                                 <img src="assets/orange-circles.svg" class="circles-img">
                             </div>
                             <p class="hero-description">Мы увеличим срок эксплуатации оборудования и снизим денежные затраты на его ремонт</p>
-                            <button class="navigation-button">
+                            <button class="navigation-button" id="hero-button">
                                 <span class="navigation-button__text">Оставить заявку</span>
                             </button>
                         </div>
@@ -406,7 +406,7 @@
                         <img src="assets/card4.png" class="price-card__content-image">
                     </div>
                 </div>
-                <div class="form-card">
+                <div class="form-card" id="form">
                     <img src="assets/bullet.png">
                     <div class="form-card__content">
                         <div class="form-card__content-header">
@@ -518,4 +518,5 @@
             </div>
     </footer>
 </body>
+<script src="assets/scripts/scroll.js"></script>
 </html>
