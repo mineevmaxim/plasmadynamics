@@ -1,25 +1,25 @@
 @keyframes primary {
-  from {
-    left: 0%;
-  }
-  to {
-    left: calc(-100%);
-  }
+    from {
+        left: 0%;
+    }
+    to {
+        left: calc(-100%);
+    }
 }
 
 @keyframes secondary {
-  from {
-    left: calc(100%);
-  }
-  to {
-    left: 0%;
-  }
+    from {
+        left: calc(100%);
+    }
+    to {
+        left: 0%;
+    }
 }
 
 .primary {
     animation: primary 20s linear infinite;
-  }
-  
+}
+
 .secondary {
     animation: secondary 20s linear infinite;
 }

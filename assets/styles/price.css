@@ -1,5 +1,5 @@
 .price-card {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     border-radius: 16px;
     padding: 40px 24px;
     display: flex;
@@ -24,12 +24,12 @@
 }
 
 .price-card__header-header span {
-    color: #FF6A00;
+    color: #ff6a00;
 }
 
 .price-card__text {
     font-size: 18px;
-    color: #848484
+    color: #848484;
 }
 
 .price-card__content {
@@ -45,7 +45,7 @@
 }
 
 .form-card {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     border-radius: 16px;
     padding: 40px 24px;
     display: flex;
@@ -101,7 +101,7 @@
     border-radius: 8px;
     outline: none;
     border: none;
-    background-color: #F0F0F0;
+    background-color: #f0f0f0;
     font-size: 18px;
     font-weight: 100;
 }
@@ -117,7 +117,7 @@
 .form-card__content-form__form-inputs-right__input {
     width: 360px;
     height: 228px;
-    background-color: #F0F0F0;
+    background-color: #f0f0f0;
     padding: 16px 24px;
     font-size: 18px;
     font-weight: 100;
@@ -144,14 +144,14 @@
 
 .form-card__content-form__form-button__button:hover {
     cursor: pointer;
-    background-color: #FF6A00;
+    background-color: #ff6a00;
 }
 
 .form-card__content-form__form-button__button {
     background-color: #101010;
     padding: 16px 32px;
     border-radius: 24px;
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 18px;
     font-weight: 200;
     font-family: "Manrope", sans-serif;

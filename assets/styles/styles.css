@@ -16,7 +16,7 @@
 
 .image-section {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
 }
 
 .about-img {
@@ -24,3 +24,7 @@
     height: auto;
 }
 
+button:hover {
+    cursor: pointer;
+    background: #ff6a00;
+}

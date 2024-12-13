@@ -5,7 +5,7 @@
 }
 
 .contacts-card {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     border-radius: 16px;
     padding: 40px 24px;
     display: flex;
@@ -30,7 +30,7 @@
 }
 
 .contacts-card__header-header span {
-    color: #FF6A00;
+    color: #ff6a00;
 }
 
 .contacts-card__info {
@@ -49,7 +49,7 @@
 .contacts-card__info-item__label {
     width: 100%;
     padding-bottom: 16px;
-    border-bottom: 2px solid #E1E1E1;
+    border-bottom: 2px solid #e1e1e1;
     font-size: 24px;
 }
 

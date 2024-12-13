@@ -42,7 +42,7 @@
     padding: 16px 32px 16px 32px;
     gap: 8px;
     border-radius: 24px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     font-family: "Manrope", sans-serif;
     font-style: normal;
     color: #101010;
@@ -50,5 +50,5 @@
 
 .navigation-button:hover {
     cursor: pointer;
-    background-color: #FF6A00;
+    background-color: #ff6a00;
 }
