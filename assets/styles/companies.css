@@ -25,14 +25,16 @@
 }
 
 .companies {
+    position: relative;
     padding: 0 20px;
 }
 
 .wrap {
     position: relative;
-    justify-self: center;
+    justify-self: center !important;
+    width: 100%;
+    display: block;
 
-    width: 1408px;
     height: 176px;
     overflow-x: hidden;
     background-color: #101010;
