@@ -775,10 +775,23 @@
                             <h1 class="examples-card__header-header">
                                 Примеры работ
                             </h1>
+                            <div class="btt-container">
+                            <div class="bttn-scroll-prev"><img src="assets/sliderbutton.svg" alt="" class="left-button" onclick="previousSlide()"></div>
+                            <div class="bttn-scroll-next"><img src="assets/sliderbutton.svg" alt="" class="right-button" onclick="nextSlide()"></div>
+                            </div>
                         </div>
                         <div class="examples-card__content">
                             <div class="examples-card__content-left">
-                                <img src="assets/example.png" alt="example" />
+                                <div class="ba-block">
+                                <div id="image-comparison">
+                                
+                                    <img src="assets/before.png" alt="alt" class="before">
+                                
+                                    <div class="after-cont">
+                                    <img src="assets/after.png" alt="alt" class="after">
+                                    </div>
+                                </div>
+                                </div>
                                 <h3 class="examples-card__content-header">
                                     Износостойкое покрытие
                                 </h3>
@@ -793,6 +806,7 @@
                                     <img
                                         src="assets/example2.png"
                                         alt="example2"
+                                        class="slider-img"
                                     />
                                     <h3 class="examples-card__content-header">
                                         Антифрикционное покрытие
@@ -807,9 +821,39 @@
                                     <img
                                         src="assets/example3.png"
                                         alt="example3"
+                                        class="slider-img"
                                     />
                                     <h3 class="examples-card__content-header">
                                         Электропроводящее покрытие
+                                    </h3>
+                                    <p class="examples-card__content-text">
+                                        Нанесение электропроводящего покрытия на
+                                        основе Zn на изоляторы
+                                    </p>
+                                </div>
+                                <div class="examples-card__content-right__item">
+                                    <img
+                                        src="assets/example2.png"
+                                        alt="example2"
+                                        class="slider-img"
+                                    />
+                                    <h3 class="examples-card__content-header">
+                                        3
+                                    </h3>
+                                    <p class="examples-card__content-text">
+                                        Нанесение антифрикционного покрытия на
+                                        основе бронзы на различные узлы деталей
+                                        машин
+                                    </p>
+                                </div>
+                                <div class="examples-card__content-right__item">
+                                    <img
+                                        src="assets/example3.png"
+                                        alt="example3"
+                                        class="slider-img"
+                                    />
+                                    <h3 class="examples-card__content-header">
+                                        4
                                     </h3>
                                     <p class="examples-card__content-text">
                                         Нанесение электропроводящего покрытия на
@@ -1059,4 +1103,7 @@
     </body>
     <script src="assets/scripts/scroll.js"></script>
     <script src="assets/scripts/modals.js"></script>
+    <script src="assets/scripts/slider.js"></script>
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="assets/scripts/before-after.js"></script>
 </html>
