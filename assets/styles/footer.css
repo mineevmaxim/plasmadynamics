@@ -10,6 +10,12 @@
     gap: 150px;
 }
 
+.map {
+    margin-top: 10px;
+    height: 409px;
+    width: 100%;
+}
+
 .footer-content {
     display: flex;
     flex-direction: row;
