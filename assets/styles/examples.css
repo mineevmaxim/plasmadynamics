@@ -146,10 +146,6 @@
     width: 10px;
     height: 100%;
     cursor: col-resize;
-    outline: none;
-    border: none;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
     background: #fff;
 }
 

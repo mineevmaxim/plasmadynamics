@@ -106,6 +106,7 @@ li {
     .main-footer {
         display: grid;
         font-size: 14px;
+        padding: 45px 0;
     }
 
     .footer-content__credentials {
