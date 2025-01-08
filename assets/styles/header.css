@@ -9,11 +9,11 @@
 }
 
 .navigation {
-    width: 1440px;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 4px 16px;
+    padding: 4px 20px;
 }
 
 .navigation-logo {
