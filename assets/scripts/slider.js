@@ -36,32 +36,33 @@ function showSlides(n, m) {
     slides[m - 1].style.display = "flex";    
 }*/
 
-let firstSlideIndex = 1
-let count = document.getElementsByClassName("examples-card__content-right__item").length
+let firstSlideIndex = 1;
+let count = document.getElementsByClassName(
+    "examples-card__content-right__item"
+).length;
 
-showSlides(firstSlideIndex)
+showSlides(firstSlideIndex);
 
 function nextSlide() {
-    firstSlideIndex += 1
-    if(firstSlideIndex > count)
-    {
-        firstSlideIndex = 1
+    firstSlideIndex += 1;
+    if (firstSlideIndex > count) {
+        firstSlideIndex = 1;
     }
     showSlides(firstSlideIndex);
 }
 
 function previousSlide() {
-    firstSlideIndex -= 1
-    if(firstSlideIndex < 1)
-    {
-        firstSlideIndex = count
+    firstSlideIndex -= 1;
+    if (firstSlideIndex < 1) {
+        firstSlideIndex = count;
     }
-    showSlides(firstSlideIndex);  
+    showSlides(firstSlideIndex);
 }
 
 function showSlides(n) {
-
-    let slides = document.getElementsByClassName("examples-card__content-right__item");
+    let slides = document.getElementsByClassName(
+        "examples-card__content-right__item"
+    );
 
     for (let slide of slides) {
         slide.style.display = "none";
