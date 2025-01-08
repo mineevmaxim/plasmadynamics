@@ -6,13 +6,85 @@
     align-items: center;
 }
 
-@media (min-width: 1000px) {
+@media (max-width: 600px) {
     .container {
-        padding: 0 20px;
         display: flex;
         flex-direction: column;
         gap: 16px;
-        width: 900px;
+        width: 100%;
+        padding: 0 20px;
+    }
+    
+    .image-section {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .about-img {
+        min-width: 666px;
+        height: auto;
+    }
+    
+    button:hover {
+        cursor: pointer;
+        background: #ff6a00;
+    }
+}
+
+@media (min-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 540px;
+    }
+    
+    .image-section {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .about-img {
+        min-width: 666px;
+        height: auto;
+    }
+    
+    button:hover {
+        cursor: pointer;
+        background: #ff6a00;
+    }
+}
+
+@media (min-width: 1000px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 960px;
+    }
+    
+    .image-section {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .about-img {
+        min-width: 666px;
+        height: auto;
+    }
+    
+    button:hover {
+        cursor: pointer;
+        background: #ff6a00;
+    }
+}
+
+@media (min-width: 1300px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 1200px;
     }
     
     .image-section {
@@ -33,7 +105,6 @@
 
 @media (min-width: 1600px) {
     .container {
-        padding: 0 20px;
         display: flex;
         flex-direction: column;
         gap: 16px;
@@ -58,7 +129,6 @@
 
 @media (min-width: 1800px) {
     .container {
-        padding: 0 20px;
         display: flex;
         flex-direction: column;
         gap: 16px;
