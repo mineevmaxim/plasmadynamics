@@ -280,63 +280,48 @@
                 </button>
             </nav>
         </header>
-        <main class="main" id="main">
-            <section class="hero" id="hero">
-                    <div class="hero-card">
-                        <div class="info-zone">
-                            <div class="city-button">
-                                <span class="city-button_text">
-                                    Екатеринбург
-                                </span>
+        <section class="hero" id="hero">
+            <div class="hero-card">
+                <div class="hero-row">
+                    <div class="info-zone">
+                        <div class="city-button">
+                            <span class="city-button_text"> Екатеринбург </span>
+                        </div>
+                        <div class="info-container">
+                            <h1 class="hero-header">
+                                Надежные покрытия<br />будущего - сегодня
+                            </h1>
+                            <div class="orange-circles">
+                                <img
+                                    src="assets/orange-circles.svg"
+                                    class="circles-img"
+                                />
                             </div>
-                            <div class="info-container">
-                                <h1 class="hero-header">
-                                    Надежные покрытия<br />будущего - сегодня
-                                </h1>
-                                <div class="orange-circles">
-                                    <img
-                                        src="assets/orange-circles.svg"
-                                        class="circles-img"
-                                    />
-                                </div>
+                            <div class="hero-description-container">
                                 <p class="hero-description">
                                     Мы увеличим срок эксплуатации оборудования и
                                     снизим денежные затраты на его ремонт
                                 </p>
-                                <button
-                                    class="navigation-button"
-                                    id="hero-button"
-                                >
+                                <button class="navigation-button hero-button" id="hero-button">
                                     <span class="navigation-button__text"
                                         >Оставить заявку</span
                                     >
                                 </button>
                             </div>
-                           
                         </div>
-                        <div class="img-zone">
-                            
-                        </div>
-                        
                     </div>
-                    
+                    <div class="img-zone"></div>
                 </div>
                 <div class="wrap">
                     <div class="wrapper-super-el primary">
                         <div class="wrapper_el">
                             <a href="#">
-                                <img
-                                    src="assets/company-logo1.svg"
-                                    alt=""
-                                />
+                                <img src="assets/company-logo1.svg" alt="" />
                             </a>
                         </div>
                         <div class="wrapper_el">
                             <a href="#">
-                                <img
-                                    src="assets/company-logo2.svg"
-                                    alt=""
-                                />
+                                <img src="assets/company-logo2.svg" alt="" />
                             </a>
                         </div>
                         <div class="wrapper_el">
@@ -348,18 +333,12 @@
                     <div class="wrapper-super-el secondary">
                         <div class="wrapper_el">
                             <a href="#">
-                                <img
-                                    src="assets/company-logo1.svg"
-                                    alt=""
-                                />
+                                <img src="assets/company-logo1.svg" alt="" />
                             </a>
                         </div>
                         <div class="wrapper_el">
                             <a href="#">
-                                <img
-                                    src="assets/company-logo2.svg"
-                                    alt=""
-                                />
+                                <img src="assets/company-logo2.svg" alt="" />
                             </a>
                         </div>
                         <div class="wrapper_el">
@@ -369,8 +348,9 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            
+            </div>
+        </section>
+        <main class="main" id="main">
             <section class="about" id="about">
                 <div class="container">
                     <div class="card">
@@ -388,18 +368,20 @@
                         </div>
                         <div class="image-section">
                             <div>
-                                <img src="assets/about_new.png" class="about-img" />
+                                <img
+                                    src="assets/about_new.png"
+                                    class="about-img"
+                                />
                             </div>
                             <div>
                                 <img
-                                src="assets/about_new_2.png"
-                                alt=""
-                                class="about-img"
-                            />
+                                    src="assets/about_new_2.png"
+                                    alt=""
+                                    class="about-img"
+                                />
                             </div>
                         </div>
                     </div>
-                    
                 </div>
             </section>
             <section class="methods" id="methods">
@@ -508,9 +490,7 @@
                                 alt="point"
                                 class="card__header-point"
                             />
-                            <h1 class="card__header-header">
-                                Виды покрытий
-                            </h1>
+                            <h1 class="card__header-header">Виды покрытий</h1>
                         </div>
                         <div class="services-card__content">
                             <div class="services-card__content-card">
@@ -1038,13 +1018,23 @@
                                 >
                             </div>
                         </div>
-                    
+                    </div>
+                </div>
+            </section>
+            <section class="map-section">
+                <div class="container">
+                    <div class="map">
+                        <script
+                            defer
+                            type="text/javascript"
+                            charset="utf-8"
+                            async
+                            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aff2fcfa415f5cdbc5bbd47e5f249f5db5dd7c7d85238743b81ff245c4be6700a&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=true"
+                        ></script>
+                    </div>
+                </div>
             </section>
         </main>
-        <div class="map">
-        <script defer type="text/javascript" charset="utf-8" async
-                    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aff2fcfa415f5cdbc5bbd47e5f249f5db5dd7c7d85238743b81ff245c4be6700a&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=true"></script>
-        </div>   
         <footer class="main-footer">
             <div class="container">
                 <div class="footer-content">
@@ -1055,7 +1045,10 @@
                             class="footer-content__credentials-photo"
                         />
                         <div class="footer-content__credentials-text">
-                            <span>Проект создан в рамках федерального проекта</span>
+                            <span
+                                >Проект создан в рамках федерального
+                                проекта</span
+                            >
                             <span>«Платформа университетского</span>
                             <span>технологического предпринимательства»</span>
                         </div>
