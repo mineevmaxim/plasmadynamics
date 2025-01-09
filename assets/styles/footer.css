@@ -10,6 +10,18 @@
     gap: 150px;
 }
 
+.map-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.map {
+    margin-top: 10px;
+    height: 409px;
+    width: 100%;
+}
+
 .footer-content {
     display: flex;
     flex-direction: row;
