@@ -1,11 +1,12 @@
-.vide-area {
+.video-area {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    gap: 16px;
 }
 
 .video-card {
-    width: 666px;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -25,4 +26,36 @@
     text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
+}
+
+@media (max-width: 600px) {
+    .video-area {
+        flex-direction: column;
+        gap: 32px;
+    }
+}
+
+@media (min-width: 600px) {
+    .video-area {
+        flex-direction: column;
+        gap: 32px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .video-area {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1300px) {
+
+}
+
+@media (min-width: 1600px) {
+
+}
+
+@media (min-width: 1800px) {
+
 }

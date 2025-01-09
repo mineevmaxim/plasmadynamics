@@ -77,3 +77,117 @@
     line-height: 28px;
     text-align: left;
 }
+
+@media (max-width: 600px) {
+    .description-card__content-card__image {
+        display: none;
+    }
+
+    .description-card__content-card {
+        width: 100%;
+        height: 380px;
+    }
+
+    .desciption-card__content-column {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        align-items: center;
+    }
+}
+
+@media (min-width: 600px) {
+    .description-card__content-card__image {
+        display: none;
+    }
+
+    .description-card__content-card {
+        width: 100%;
+        height: 380px;
+    }
+
+    .desciption-card__content-column {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1000px) {
+    .description-card__content-card__image {
+        display: none;
+    }
+
+    .description-card__content-card {
+        width: 100%;
+    }
+
+    .desciption-card__content-column {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1300px) {
+    .description-card__content-card__image {
+        display: none;
+    }
+
+    .description-card__content-card {
+        width: 100%;
+    }
+
+    .desciption-card__content-column {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1600px) {
+    .desciption-card__content-column {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+    }
+    
+    .description-card__content-card {
+        width: 440px;
+        height: 264px;
+        background-color: #101010;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 32px 24px;
+        border-radius: 16px;
+    }
+
+    .description-card__content-card__image {
+        display: block;
+    }
+}
+
+@media (min-width: 1800px) {
+    .description-card__content-card {
+        width: 520px;
+        height: 310px;
+    }
+
+    .description-card__content-card__image {
+        width: 410px;
+        height: 410px;
+    }
+
+    .description-card__content-card__header {
+        font-size: 44px;
+    }
+
+    .description-card__content-card__text {
+        font-size: 24px;
+    }
+}

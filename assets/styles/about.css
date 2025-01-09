@@ -1,18 +1,43 @@
-/* PC */
-.services-card__description {
-    font-family: Manrope;
-    font-size: 36px;
-    font-weight: 600;
-    line-height: 44px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: #101010;
-}
-
-.point-extensions {
+.image-section {
     display: flex;
-    align-self: center;
+    flex-direction: row;
+    gap: 16px;
+    width: 100%;
+    justify-content: space-around;
 }
 
-/* PC 1400 */
+.about-img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+}
+
+@media (max-width: 600px) {
+    .image-section {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 600px) {
+    .image-section {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 1000px) {
+    .image-section {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1300px) {
+    
+}
+
+@media (min-width: 1600px) {
+    
+}
+
+@media (min-width: 1800px) {
+    
+}
