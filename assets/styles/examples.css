@@ -1,3 +1,7 @@
+.examples-header {
+    align-self: center;
+}
+
 .examples-card__content {
     display: flex;
     flex-direction: row;
