@@ -37,6 +37,7 @@
 @media (max-width: 600px) {
     .card {
         padding: 16px;
+        gap: 16px;
     }
 
     .card__header-header {
