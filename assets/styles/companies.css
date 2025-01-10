@@ -75,3 +75,27 @@
     flex-direction: row;
     gap: 64px;
 }
+
+@media (max-width: 600px) {
+
+}
+
+@media (min-width: 600px) {
+
+}
+
+@media (min-width: 1000px) {
+
+}
+
+@media (min-width: 1300px) {
+
+}
+
+@media (min-width: 1600px) {
+
+}
+
+@media (min-width: 1800px) {
+    
+}
