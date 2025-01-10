@@ -105,6 +105,45 @@
         font-weight: 600;
         color: #ffffff;
     }
+
+    .statistics-card {
+        background-color: #ffffff;
+        border-radius: 16px;
+        padding: 16px;
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        justify-content: space-between;
+        align-items: start;
+    }
+    
+    .statistics-card__column {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    
+    .statistics-card__column-header {
+        border-bottom: 2px solid #e1e1e1;
+        padding-bottom: 24px;
+    }
+    
+    .statistics-card__column-header h2 {
+        font-size: 36px;
+        font-weight: 600;
+        text-align: left;
+    }
+    
+    .statistics-card__column-text {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 28px;
+        text-align: left;
+    }
+
+    .statistics-card__image {
+        display: none;
+    }
 }
 
 @media (min-width: 600px) {
@@ -134,9 +173,52 @@
         font-weight: 600;
         color: #ffffff;
     }
+
+    .statistics-card {
+        background-color: #ffffff;
+        border-radius: 16px;
+        padding: 24px;
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+        justify-content: space-between;
+        align-items: start;
+    }
+    
+    .statistics-card__column {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    
+    .statistics-card__column-header {
+        border-bottom: 2px solid #e1e1e1;
+        padding-bottom: 24px;
+    }
+    
+    .statistics-card__column-header h2 {
+        font-size: 36px;
+        font-weight: 600;
+        text-align: left;
+    }
+    
+    .statistics-card__column-text {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 28px;
+        text-align: left;
+    }
+
+    .statistics-card__image {
+        display: none;
+    }
 }
 
 @media (min-width: 1000px) {
+    .statistics-card__image {
+        display: block;
+    }
+
     .description-card__content-card__image {
         display: none;
     }
@@ -164,6 +246,41 @@
         font-size: 24px;
         font-weight: 600;
         color: #ffffff;
+    }
+
+    .statistics-card {
+        background-color: #ffffff;
+        border-radius: 16px;
+        padding: 24px;
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+        justify-content: space-between;
+        align-items: start;
+    }
+    
+    .statistics-card__column {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    
+    .statistics-card__column-header {
+        border-bottom: 2px solid #e1e1e1;
+        padding-bottom: 24px;
+    }
+    
+    .statistics-card__column-header h2 {
+        font-size: 72px;
+        font-weight: 600;
+        text-align: left;
+    }
+    
+    .statistics-card__column-text {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 28px;
+        text-align: left;
     }
 }
 
@@ -196,6 +313,41 @@
         font-weight: 600;
         color: #ffffff;
     }
+
+    .statistics-card {
+        background-color: #ffffff;
+        border-radius: 16px;
+        padding: 40px 24px;
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .statistics-card__column {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    
+    .statistics-card__column-header {
+        border-bottom: 2px solid #e1e1e1;
+        padding-bottom: 24px;
+    }
+    
+    .statistics-card__column-header h2 {
+        font-size: 96px;
+        font-weight: 600;
+        text-align: left;
+    }
+    
+    .statistics-card__column-text {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 28px;
+        text-align: left;
+    }
 }
 
 @media (min-width: 1600px) {
@@ -219,6 +371,41 @@
 
     .description-card__content-card__image {
         display: block;
+    }
+
+    .statistics-card {
+        background-color: #ffffff;
+        border-radius: 16px;
+        padding: 40px 24px;
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .statistics-card__column {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    
+    .statistics-card__column-header {
+        border-bottom: 2px solid #e1e1e1;
+        padding-bottom: 24px;
+    }
+    
+    .statistics-card__column-header h2 {
+        font-size: 96px;
+        font-weight: 600;
+        text-align: left;
+    }
+    
+    .statistics-card__column-text {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 28px;
+        text-align: left;
     }
 }
 

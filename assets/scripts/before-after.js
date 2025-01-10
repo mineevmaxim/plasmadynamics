@@ -18,7 +18,6 @@ function imageComparison(selector) {
         .on("dragstart", () => false)
         .on("mousedown", function (e) {
             let slider = $(this);
-            slider.css("border", "none");
             let doc = $(document).on("mousemove", (e) => {
                 let offset = e.pageX - comparison.position().left;
                 let content_width = comparison.width();
@@ -28,7 +27,6 @@ function imageComparison(selector) {
 
                 if (offset < -dif) offset = -dif;
                 if (offset > content_width + dif) {
-                    console.log(width);
                     offset = content_width + dif;
                 }
                 slider.css("left", offset + "px");
