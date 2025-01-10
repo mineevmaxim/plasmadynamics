@@ -58,3 +58,20 @@
     gap: 20px;
     overflow-x: hidden;
 }
+
+.marquee {
+    display: flex;
+}
+
+.marquee__marquee {
+    background-color: #101010;
+}
+
+.marquee__images {
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+}

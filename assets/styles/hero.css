@@ -1,6 +1,8 @@
 .hero {
     height: calc(100vh - 58px);
     width: 100vw;
+    overflow-y: hidden;
+    margin-bottom: 16px;
 }
 
 .hero-card {
@@ -27,17 +29,12 @@
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     color: #ffffff;
-    margin-bottom: 24px;
 }
 
 .hero-description-container {
     display: flex;
     flex-direction: column;
     gap: 50px;
-}
-
-.orange-circles {
-    margin-bottom: 24px;
 }
 
 .hero-description {
@@ -76,7 +73,6 @@
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     width: fit-content;
-    margin-bottom: 155px;
 }
 
 .info-zone {
