@@ -83,6 +83,10 @@
         display: none;
     }
 
+    .description-card__content {
+        gap: 8px;
+    }
+
     .description-card__content-card {
         width: 100%;
         height: 100%;
@@ -121,6 +125,7 @@
         display: flex;
         flex-direction: column;
         gap: 16px;
+        width: 100%;
     }
     
     .statistics-card__column-header {
