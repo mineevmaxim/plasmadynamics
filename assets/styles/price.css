@@ -133,6 +133,11 @@
 }
 
 @media (max-width: 600px) {
+    .form-card {
+        padding: 16px;
+        gap: 16px;
+    }
+
     .price-card__content {
         justify-content: center;
         width: 100%;
@@ -147,9 +152,40 @@
         width: 100%;
         height: 100%;
     }
+
+    .form-card__image {
+        display: none;
+    }
+
+    .form-card__content-form__form-inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        justify-content: center;
+    }
+
+    .form-card__content-form__form-inputs-left {
+        flex-direction: column;
+    }
+
+    .form-card__content-form__form-inputs-left__input {
+        width: 100%;
+    }
+
+    .form-card__content-form__form-inputs-right__input {
+        width: 100%;
+    }
+
+    .form-card__content {
+        width: 100%;
+    }
 }
 
 @media (min-width: 600px) {
+    .form-card {
+        padding: 16px;
+    }
+
     .price-card__content {
         justify-content: center;
         width: 100%;
@@ -164,9 +200,39 @@
         height: auto;
         aspect-ratio: 11 / 15;
     }
+    .form-card__image {
+        display: none;
+    }
+
+    .form-card__content-form__form-inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        justify-content: center;
+    }
+
+    .form-card__content-form__form-inputs-left {
+        flex-direction: column;
+    }
+
+    .form-card__content-form__form-inputs-left__input {
+        width: 100%;
+    }
+
+    .form-card__content-form__form-inputs-right__input {
+        width: 100%;
+    }
+
+    .form-card__content {
+        width: 100%;
+    }
 }
 
 @media (min-width: 1000px) {
+    .form-card {
+        padding: 24px;
+    }
+
     .price-card__content {
         justify-content: center;
         width: 100%;
@@ -181,9 +247,48 @@
         height: auto;
         aspect-ratio: 11 / 15;
     }
+
+    .form-card__image {
+        display: none;
+    }
+
+    .form-card__content-form__form-inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        justify-content: center;
+    }
+
+    .form-card__content-form__form-inputs-left {
+        flex-direction: column;
+    }
+
+    .form-card__content-form__form-inputs-left__input {
+        width: 100%;
+    }
+
+    .form-card__content-form__form-inputs-right__input {
+        width: 100%;
+    }
+
+    .form-card__content {
+        width: 100%;
+    }
 }
 
 @media (min-width: 1300px) {
+    .form-card {
+        padding: 40px 24px;
+    }
+
+    .form-card__content {
+        width: auto;
+    }
+
+    .form-card__image {
+        display: block;
+    }
+
     .form-card {
         justify-content: space-around;
     }
@@ -198,11 +303,68 @@
         height: auto;
         aspect-ratio: 11 / 15;
     }
+
+    .form-card__content-form__form-inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        justify-content: center;
+    }
+
+    .form-card__content-form__form-inputs-left {
+        flex-direction: column;
+    }
+
+    .form-card__content-form__form-inputs-left__input {
+        width: 100%;
+    }
+
+    .form-card__content-form__form-inputs-right__input {
+        width: 100%;
+        height: 150px;
+    }
 }
 
 @media (min-width: 1600px) {
     .price-card__content {
         gap: 30px;
+    }
+
+    .form-card__content-form__form-inputs {
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+    }
+
+    .form-card__content-form__form-inputs-left {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .form-card__content-form__form-inputs-left__input {
+        width: 320px;
+        height: 60px;
+        padding: 16px 24px;
+        border-radius: 8px;
+        outline: none;
+        border: none;
+        background-color: #f0f0f0;
+        font-size: 18px;
+        font-weight: 100;
+    }
+
+    .form-card__content-form__form-inputs-right__input {
+        width: 360px;
+        height: 228px;
+        background-color: #f0f0f0;
+        padding: 16px 24px;
+        font-size: 18px;
+        font-weight: 100;
+        border-radius: 8px;
+        outline: none;
+        border: none;
+        resize: none;
     }
 }
 
