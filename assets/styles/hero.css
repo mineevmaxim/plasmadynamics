@@ -1,5 +1,5 @@
 .hero {
-    height: calc(100vh - 58px);
+    height: calc(100vh - 76px);
     width: 100vw;
     overflow-y: hidden;
 }
@@ -111,15 +111,15 @@
             ),
             url("../new_main.png");
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 100% 70%;
     }
 
     .info-container {
-        gap: 32px;
+        gap: 24px;
     }
 
     .hero-description-container {
-        gap: 32px;
+        gap: 24px;
     }
 
     .info-zone::before {
