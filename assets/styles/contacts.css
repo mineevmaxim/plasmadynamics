@@ -32,3 +32,120 @@
 .contacts-map {
     width: 100%;
 }
+
+@media (max-width: 600px) {
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .contacts-card__info {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 32px;
+    }
+    
+    .contacts-card__info-item {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 8px;
+    }
+    
+    .contacts-card__info-item__label {
+        width: 100%;
+        padding-bottom: 8px;
+        border-bottom: 2px solid #e1e1e1;
+        font-size: 18px;
+        color: #101010;
+    }
+    
+    .contacts-card__info-item__content {
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
+
+@media (min-width: 600px) {
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .contacts-card__info {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 32px;
+    }
+    
+    .contacts-card__info-item {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 8px;
+    }
+    
+    .contacts-card__info-item__label {
+        width: 100%;
+        padding-bottom: 8px;
+        border-bottom: 2px solid #e1e1e1;
+        font-size: 18px;
+        color: #101010;
+    }
+    
+    .contacts-card__info-item__content {
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
+
+@media (min-width: 1000px) {
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .contacts-card__info {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 16px;
+    }
+    
+    .contacts-card__info-item {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 16px;
+    }
+    
+    .contacts-card__info-item__label {
+        width: 100%;
+        padding-bottom: 16px;
+        border-bottom: 2px solid #e1e1e1;
+        font-size: 24px;
+    }
+    
+    .contacts-card__info-item__content {
+        font-size: 28px;
+        font-weight: 700;
+    }
+}
+
+@media (min-width: 1300px) {
+    
+}
+
+@media (min-width: 1600px) {
+    
+}
+
+@media (min-width: 1800px) {
+    
+}
+

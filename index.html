@@ -302,7 +302,10 @@
                                     Мы увеличим срок эксплуатации оборудования и
                                     снизим денежные затраты на его ремонт
                                 </p>
-                                <button class="navigation-button hero-button" id="hero-button">
+                                <button
+                                    class="navigation-button hero-button"
+                                    id="hero-button"
+                                >
                                     <span class="navigation-button__text"
                                         >Оставить заявку</span
                                     >
@@ -312,7 +315,25 @@
                     </div>
                     <div class="img-zone"></div>
                 </div>
-                <div class="wrap">
+                <div class="marquee">
+                    <marquee direction="left" class="marquee__marquee">
+                        <div class="marquee__images">
+                            <img src="assets/company-logo1.svg" alt="logo" />
+                            <img src="assets/company-logo2.svg" alt="logo" />
+                            <img src="assets/ual.svg" alt="logo" />
+                            <img src="assets/company-logo1.svg" alt="logo" />
+                            <img src="assets/company-logo2.svg" alt="logo" />
+                            <img src="assets/ual.svg" alt="logo" />
+                            <img src="assets/company-logo1.svg" alt="logo" />
+                            <img src="assets/company-logo2.svg" alt="logo" />
+                            <img src="assets/ual.svg" alt="logo" />
+                            <img src="assets/company-logo1.svg" alt="logo" />
+                            <img src="assets/company-logo2.svg" alt="logo" />
+                            <img src="assets/ual.svg" alt="logo" />
+                        </div>
+                    </marquee>
+                </div>
+                <!-- <div class="wrap">
                     <div class="wrapper-super-el primary">
                         <div class="wrapper_el">
                             <a href="#">
@@ -347,7 +368,7 @@
                             </a>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
         <main class="main" id="main">
@@ -746,7 +767,10 @@
                                 проектов завершено
                             </span>
                         </div>
-                        <img src="assets/thermal spray on a metal.png" />
+                        <img
+                            src="assets/thermal spray on a metal.png"
+                            class="statistics-card__image"
+                        />
                     </div>
                 </div>
             </section>
@@ -763,43 +787,46 @@
                                 Примеры работ
                             </h1>
                             <div class="btt-container">
-                                <div class="bttn-scroll-prev">
+                                <div
+                                    class="bttn-scroll-prev"
+                                    onclick="previousSlide()"
+                                >
                                     <img
                                         src="assets/sliderbutton.svg"
                                         alt=""
                                         class="left-button"
-                                        onclick="previousSlide()"
                                     />
                                 </div>
-                                <div class="bttn-scroll-next">
+                                <div
+                                    class="bttn-scroll-next"
+                                    onclick="nextSlide()"
+                                >
                                     <img
                                         src="assets/sliderbutton.svg"
                                         alt=""
                                         class="right-button"
-                                        onclick="nextSlide()"
                                     />
                                 </div>
                             </div>
                         </div>
                         <div class="examples-card__content">
                             <div class="examples-card__content-left">
-                                <div class="ba-block">
-                                    <div id="image-comparison">
+                                <div class="slider-container">
+                                    <div class="slider-image before">
                                         <img
-                                            draggable="false"
                                             src="assets/before.png"
-                                            alt="alt"
-                                            class="before"
+                                            alt="Before"
+                                            class="before__image"
                                         />
-                                        <div class="after-cont">
-                                            <img
-                                                draggable="false"
-                                                src="assets/after.png"
-                                                alt="alt"
-                                                class="after"
-                                            />
-                                        </div>
                                     </div>
+                                    <div class="slider-image after">
+                                        <img
+                                            src="assets/after.png"
+                                            alt="After"
+                                            class="after__image"
+                                        />
+                                    </div>
+                                    <div class="slider-handle"></div>
                                 </div>
                                 <h3 class="examples-card__content-header">
                                     Износостойкое покрытие
@@ -842,27 +869,54 @@
                                 </div>
                                 <div class="examples-card__content-right__item">
                                     <img
-                                        src="assets/example2.png"
-                                        alt="example2"
+                                        src="assets/example4.png"
+                                        alt="example4"
                                         class="slider-img"
                                     />
                                     <h3 class="examples-card__content-header">
-                                        3
+                                        Электропроводящее покрытие
                                     </h3>
                                     <p class="examples-card__content-text">
-                                        Нанесение антифрикционного покрытия на
-                                        основе бронзы на различные узлы деталей
-                                        машин
+                                        Нанесение электропроводящего покрытия на
+                                        основе Zn на изоляторы
                                     </p>
                                 </div>
                                 <div class="examples-card__content-right__item">
                                     <img
-                                        src="assets/example3.png"
-                                        alt="example3"
+                                        src="assets/example5.png"
+                                        alt="example5"
                                         class="slider-img"
                                     />
                                     <h3 class="examples-card__content-header">
-                                        4
+                                        Электропроводящее покрытие
+                                    </h3>
+                                    <p class="examples-card__content-text">
+                                        Нанесение электропроводящего покрытия на
+                                        основе Zn на изоляторы
+                                    </p>
+                                </div>
+                                <div class="examples-card__content-right__item">
+                                    <img
+                                        src="assets/example6.png"
+                                        alt="example6"
+                                        class="slider-img"
+                                    />
+                                    <h3 class="examples-card__content-header">
+                                        Электропроводящее покрытие
+                                    </h3>
+                                    <p class="examples-card__content-text">
+                                        Нанесение электропроводящего покрытия на
+                                        основе Zn на изоляторы
+                                    </p>
+                                </div>
+                                <div class="examples-card__content-right__item">
+                                    <img
+                                        src="assets/example7.png"
+                                        alt="example7"
+                                        class="slider-img"
+                                    />
+                                    <h3 class="examples-card__content-header">
+                                        Электропроводящее покрытие
                                     </h3>
                                     <p class="examples-card__content-text">
                                         Нанесение электропроводящего покрытия на
@@ -891,34 +945,42 @@
                             Цена зависит от множества факторов:
                         </div>
                         <div class="price-card__content">
-                            <img
-                                src="assets/card.png"
-                                class="price-card__content-image"
-                            />
-                            <img
-                                src="assets/card2.png"
-                                class="price-card__content-image"
-                            />
-                            <img
-                                src="assets/card3.png"
-                                class="price-card__content-image"
-                            />
-                            <img
-                                src="assets/card4.png"
-                                class="price-card__content-image"
-                            />
+                            <div>
+                                <img
+                                    src="assets/card.png"
+                                    class="price-card__content-image"
+                                />
+                            </div>
+                            <div>
+                                <img
+                                    src="assets/card2.png"
+                                    class="price-card__content-image"
+                                />
+                            </div>
+                            <div>
+                                <img
+                                    src="assets/card3.png"
+                                    class="price-card__content-image"
+                                />
+                            </div>
+                            <div>
+                                <img
+                                    src="assets/card4.png"
+                                    class="price-card__content-image"
+                                />
+                            </div>
                         </div>
                     </div>
                     <div class="form-card" id="form">
-                        <img src="assets/bullet.png" />
+                        <img src="assets/bullet.png" class="form-card__image" />
                         <div class="form-card__content">
                             <div class="form-card__content-header">
                                 <img
                                     src="assets/point.svg"
                                     alt="point"
-                                    class="form-card__content-header__point"
+                                    class="card__header-point"
                                 />
-                                <h1 class="form-card__content-header__header">
+                                <h1 class="card__header-header">
                                     Свяжитесь с нами
                                 </h1>
                             </div>
