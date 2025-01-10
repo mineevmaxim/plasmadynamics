@@ -49,6 +49,9 @@
     border: none;
     width: 48px;
     height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .services-card__content-card__button-button:hover {
@@ -60,6 +63,15 @@
     .services-card__content-card {
         width: 100%;
         aspect-ratio: 16 / 9;
+    }
+
+    .services-card__content-card__button-text {
+        font-size: 16px;
+    }
+
+    .services-card__content-card__button-button {
+        height: 36px;
+        width: 36px;
     }
 }
 
