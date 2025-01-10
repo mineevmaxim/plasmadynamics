@@ -68,7 +68,12 @@
 
 .left-button,
 .right-button {
-    cursor: pointer;
+    -moz-user-select: none;
+    -o-user-select:none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+     user-select: none;
 }
 
 .bttn-scroll-prev:hover,
@@ -136,6 +141,12 @@
 
 .image-comparison__image {
     display: block;
+    -moz-user-select: none;
+    -o-user-select:none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+     user-select: none;
 }
 
 /* Ползунок */
