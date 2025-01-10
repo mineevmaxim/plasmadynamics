@@ -60,6 +60,10 @@
 }
 
 @media (max-width: 600px) {
+    .services-card__content {
+        row-gap: 8px;
+    }
+
     .services-card__content-card {
         width: 100%;
         aspect-ratio: 16 / 9;

@@ -157,15 +157,20 @@
         display: none;
     }
 
+    .form-card__content-form__form {
+        gap: 16px;
+    }
+
     .form-card__content-form__form-inputs {
         display: flex;
         flex-direction: column;
-        gap: 32px;
+        gap: 16px;
         justify-content: center;
     }
 
     .form-card__content-form__form-inputs-left {
         flex-direction: column;
+        gap: 16px;
     }
 
     .form-card__content-form__form-inputs-left__input {
@@ -179,6 +184,7 @@
 
     .form-card__content {
         width: 100%;
+        gap: 16px;
     }
 }
 
