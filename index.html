@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Plazmadynamics</title>
+        <title>Надежное покрытие будущего - сегодня</title>
+        <meta name="description" content="Мы увеличим срок эксплуатации оборудования и снизим денежные затраты на его ремонт Тел. +7 (992) 014-38-77">
         <link rel="icon" href="assets/lmao.svg" type="image/x-icon" />
         <link rel="stylesheet" href="assets/styles/header.css" />
         <link rel="stylesheet" href="assets/styles/hero.css" />
@@ -112,7 +113,9 @@
                         </div>
                     </div>
                     <button class="submit-btn">Оставить заявку</button>
-                    <button class="modal-close-btn" onclick="closeModal()">Закрыть</button>
+                    <button class="modal-close-btn" onclick="closeModal()">
+                        Закрыть
+                    </button>
                 </div>
             </div>
         </div>
@@ -147,7 +150,9 @@
                         </div>
                     </div>
                     <button class="submit-btn">Оставить заявку</button>
-                    <button class="modal-close-btn" onclick="closeModal()">Закрыть</button>
+                    <button class="modal-close-btn" onclick="closeModal()">
+                        Закрыть
+                    </button>
                 </div>
             </div>
         </div>
@@ -182,7 +187,9 @@
                         </div>
                     </div>
                     <button class="submit-btn">Оставить заявку</button>
-                    <button class="modal-close-btn" onclick="closeModal()">Закрыть</button>
+                    <button class="modal-close-btn" onclick="closeModal()">
+                        Закрыть
+                    </button>
                 </div>
             </div>
         </div>
@@ -217,7 +224,9 @@
                         </div>
                     </div>
                     <button class="submit-btn">Оставить заявку</button>
-                    <button class="modal-close-btn" onclick="closeModal()">Закрыть</button>
+                    <button class="modal-close-btn" onclick="closeModal()">
+                        Закрыть
+                    </button>
                 </div>
             </div>
         </div>
@@ -252,7 +261,9 @@
                         </div>
                     </div>
                     <button class="submit-btn">Оставить заявку</button>
-                    <button class="modal-close-btn" onclick="closeModal()">Закрыть</button>
+                    <button class="modal-close-btn" onclick="closeModal()">
+                        Закрыть
+                    </button>
                 </div>
             </div>
         </div>
@@ -290,7 +301,9 @@
                         </div>
                     </div>
                     <button class="submit-btn">Оставить заявку</button>
-                    <button class="modal-close-btn" onclick="closeModal()">Закрыть</button>
+                    <button class="modal-close-btn" onclick="closeModal()">
+                        Закрыть
+                    </button>
                 </div>
             </div>
         </div>
@@ -1052,8 +1065,9 @@
                             </div>
                             <div class="form-card__content-form">
                                 <form
-                                    action=""
                                     class="form-card__content-form__form"
+                                    id="contactForm"
+                                    method="POST"
                                 >
                                     <div
                                         class="form-card__content-form__form-inputs"
@@ -1062,16 +1076,19 @@
                                             class="form-card__content-form__form-inputs-left"
                                         >
                                             <input
+                                                required
                                                 type="text"
                                                 placeholder="Имя"
                                                 class="form-card__content-form__form-inputs-left__input"
                                             />
                                             <input
+                                                required
                                                 type="email"
                                                 placeholder="Почта"
                                                 class="form-card__content-form__form-inputs-left__input"
                                             />
                                             <input
+                                                required
                                                 type="tel"
                                                 placeholder="Номер телефона"
                                                 class="form-card__content-form__form-inputs-left__input"
@@ -1083,6 +1100,7 @@
                                             <textarea
                                                 class="form-card__content-form__form-inputs-right__input"
                                                 placeholder="Ваш вопрос"
+                                                required
                                             ></textarea>
                                         </div>
                                     </div>
@@ -1091,6 +1109,7 @@
                                     >
                                         <button
                                             class="form-card__content-form__form-button__button"
+                                            type="submit"
                                         >
                                             Отправить заявку
                                         </button>
@@ -1256,6 +1275,7 @@
         </footer>
     </body>
     <script src="assets/scripts/sidebar.js"></script>
+    <script src="assets/scripts/mail.js"></script>
     <script src="assets/scripts/scroll.js"></script>
     <script src="assets/scripts/modals.js"></script>
     <script src="assets/scripts/slider.js"></script>
