@@ -113,6 +113,14 @@ html {
     text-rendering: geometricPrecision;
 }
 
+a {
+    transition: color 0.3s;
+}
+
+button {
+    transition: background-color 0.3s;
+}
+
 body {
     line-height: 1;
     font-family: "Manrope", sans-serif;

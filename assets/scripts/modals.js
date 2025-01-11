@@ -12,6 +12,7 @@ const modalElectricallyConductive = document.getElementById(
     "modal-electrically-conductive"
 );
 const modalOverlay = document.getElementById("modal-overlay");
+const sidebar = document.getElementById('sidebar');
 
 const modalWearResistantBtn = document.getElementById(
     "modal-wear-resistant-btn"
@@ -68,6 +69,7 @@ function closeModal() {
     modalCorrosionResistant.style.display = "none";
     modalElectricallyConductive.style.display = "none";
     modalOverlay.style.display = "none";
+    sidebar.classList.remove('open');
 }
 
 function goToForm() {
