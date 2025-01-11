@@ -1,5 +1,5 @@
 .hero {
-    height: calc(100vh - 60px);
+    height: calc(100vh - 210px);
     width: 100vw;
     overflow-y: hidden;
 }
@@ -17,7 +17,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 100%;
+    height: initial;
+    align-content: space-between;
 }
 
 .hero-header {
@@ -96,13 +97,11 @@
 }
 
 @media (max-width: 600px) {
-    .hero {
-        margin-bottom: 16px;
-    }
 
     .hero-row {
         flex-direction: column;
         align-items: center;
+        align-content: space-between;
     }
 
     .info-zone {
@@ -145,6 +144,7 @@
     .hero-row {
         flex-direction: column;
         align-items: center;
+        align-content: space-between;
     }
 
     .info-container {
@@ -202,7 +202,8 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        height: 100%;
+        height: initial;
+        align-content: space-between;
     }
 
     .hero-header {
@@ -213,7 +214,7 @@
 
 @media (min-width: 1300px) {
     .hero {
-        height: calc(100vh - 58px);
+        height: calc(100vh - 158px);
         width: 100vw;
         overflow-y: hidden;
     }
@@ -232,6 +233,7 @@
         flex-direction: row;
         justify-content: space-between;
         height: 100%;
+        align-content: space-between;
     }
 
     .hero-header {
