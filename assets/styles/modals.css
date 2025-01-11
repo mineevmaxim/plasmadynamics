@@ -46,8 +46,9 @@
     width: 205px;
     font-family: Manrope;
     font-size: 18px;
-    font-weight: 200;
+    font-weight: 300;
     text-align: center;
+    cursor: pointer;
 }
 
 .modal-content {
@@ -91,4 +92,194 @@
     line-height: 21px;
     font-weight: 400;
     color: #848484;
+}
+
+.modal-close-btn {
+    display: none;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #ff6a00;
+}
+
+.modal-close-btn:hover {
+    background-color: #f1f1f1;
+}
+
+@media (max-width: 600px) {
+    .modal-wear-resistant,
+    .modal-thermal-barrier,
+    .modal-antifriction,
+    .modal-heat-resistant,
+    .modal-corrosion-resistant,
+    .modal-electrically-conductive {
+        display: none;
+        position: fixed;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        left: 50%;
+        bottom: 0;
+        background-color: white;
+        border-radius: 24px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        z-index: 10000000;
+        padding: 16px;
+        width: calc(100% - 16px);
+        height: 100%;
+        font-size: 16px;
+    }
+
+    .modal-content {
+        flex-direction: column;
+        overflow-y: auto;
+        gap: 16px;
+    }
+
+    .modal-right {
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .modal-right__content {
+        gap: 16px;
+    }
+
+    .modal-image {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1;
+    }
+
+    .modal-title {
+        font-size: 24px;
+    }
+
+    .submit-btn {
+        width: 100%;
+    }
+
+    .modal-close-btn {
+        display: block;
+        border-radius: 24px;
+        padding: 16px 32px;
+        gap: 8px;
+        background: none;
+        color: rgba(16, 16, 16, 1);
+        justify-self: flex-end;
+        width: 100%;
+        font-family: Manrope;
+        font-size: 18px;
+        font-weight: 300;
+        text-align: center;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 999px) {
+    .modal-wear-resistant,
+    .modal-thermal-barrier,
+    .modal-antifriction,
+    .modal-heat-resistant,
+    .modal-corrosion-resistant,
+    .modal-electrically-conductive {
+        width: 90%;
+        background-color: white;
+        border-radius: 24px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        z-index: 10000000;
+        padding: 24px;
+        font-size: 16px;
+        height: auto;
+    }
+
+    .modal-text {
+        line-height: 24px;
+    }
+
+    .modal-image {
+        display: none;
+    }
+
+    .modal-title {
+        color: #101010;
+        font-weight: 600;
+        font-size: 24px;
+    }
+
+    .modal-right__content {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .modal-right {
+        gap: 16px;
+    }
+
+    .submit-btn {
+        width: 100%;
+    }
+
+    .modal-close-btn {
+        display: block;
+        border-radius: 24px;
+        padding: 16px 32px;
+        gap: 8px;
+        background: none;
+        color: rgba(16, 16, 16, 1);
+        justify-self: flex-end;
+        width: 100%;
+        font-family: Manrope;
+        font-size: 18px;
+        font-weight: 300;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1299px) {
+    .modal-wear-resistant,
+    .modal-thermal-barrier,
+    .modal-antifriction,
+    .modal-heat-resistant,
+    .modal-corrosion-resistant,
+    .modal-electrically-conductive {
+        width: 90%;
+        background-color: white;
+        border-radius: 24px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        z-index: 10000000;
+        padding: 16px;
+        font-size: 18px;
+        height: 600px;
+    }
+
+    .modal-image {
+        height: 100%;
+    }
+
+    .modal-title {
+        color: #101010;
+        font-weight: 600;
+        font-size: 36px;
+    }
+
+    .modal-right__content {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .modal-right {
+        gap: 16px;
+    }
+}
+
+@media (min-width: 1300px) {
+}
+
+@media (min-width: 1600px) {
+}
+
+@media (min-width: 1800px) {
 }
