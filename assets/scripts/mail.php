@@ -26,8 +26,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();
         $mail->Host = 'smtp.mail.ru';
         $mail->SMTPAuth = true;
-        $mail->Username = 'goldfarbm@mail.ru'; 
-        $mail->Password = 'jXK3m0U6RHwqykG9TsSs'; 
+        $mail->Username = 'AFsf'; 
+        $mail->Password = 'Afaf'; 
         $mail->SMTPSecure = 'ssl'; 
         $mail->Port = 465;
 
