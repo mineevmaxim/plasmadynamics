@@ -1,22 +1,31 @@
 .hero {
-    height: calc(100vh - 60px);
-    width: auto;
+    /* height: calc(100vh - 60px); */
+    /* width: 100vw; */
+    width: 100%;
     overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    padding: 16px 0;
+    height: 85vh;
 }
 
 .hero-card {
     width: 100%;
     height: 100%;
-    background-color: #101010;
-    display: grid;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 24px;
 }
 
 .hero-row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: initial;
-    align-content: space-between;
+    height: 100%;
+    background-color: #101010;
+    border-radius: 24px;
 }
 
 .hero-header {
@@ -51,6 +60,7 @@
     background-image: url("../new_main.png");
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 0 24px 0 0;
 }
 
 .hero-img {
@@ -82,12 +92,17 @@
     flex-direction: column;
     align-items: start;
     justify-content: space-between;
+    border-radius: 24px;
 }
 
 .info-container {
     display: flex;
     flex-direction: column;
     gap: 50px;
+}
+
+.img-zone {
+    border-radius: 0 24px 24px 0;
 }
 
 .navigation-button.hero-button {
@@ -132,12 +147,8 @@
     }
 
     .hero-header {
-        font-size: 28px;
+        font-size: 32px;
         line-height: 40px;
-    }
-
-    .hero-description {
-        font-size: 16px;
     }
 }
 
@@ -188,8 +199,6 @@
 }
 
 @media (min-width: 1000px) {
-    
-
     .img-zone {
         display: block;
         width: 50%;
@@ -214,26 +223,23 @@
 }
 
 @media (min-width: 1300px) {
-    .hero {
-        height: calc(100vh - 158px);
-        width: 100%;
-        overflow-y: hidden;
-    }
-
     .hero-card {
         width: 100%;
         height: 100%;
-        background-color: #101010;
-        display: grid;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        border-radius: 24px;
     }
-
+    
     .hero-row {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         height: 100%;
-        align-content: space-between;
-    }
+        background-color: #101010;
+        border-radius: 24px;
+    }    
 
     .hero-header {
         font-family: Manrope;
