@@ -30,7 +30,7 @@
 }
 
 .contacts-map {
-    width: 100%;
+    width: 100vw;
 }
 
 @media (max-width: 600px) {

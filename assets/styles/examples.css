@@ -39,6 +39,22 @@
     grid-area: slider;
 }
 
+.img-cont {
+    background: #F0F0F0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    height: 368px;
+}
+
+.slider-img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
 .examples-card__content-right__item {
     display: flex;
     flex-direction: column;
