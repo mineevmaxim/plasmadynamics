@@ -1,16 +1,21 @@
 .hero {
-    height: calc(100vh - 60px);
-    width: 100vw;
+    /* height: calc(100vh - 60px); */
+    /* width: 100vw; */
+    width: 100%;
     overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    padding: 16px 0;
+    height: 70vh;
 }
 
 .hero-card {
     width: 100%;
     height: 100%;
-    background-color: #101010;
-    display: grid;
-    grid-auto-flow: row;
-    grid-template-rows: 5fr 1fr;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 24px;
 }
 
 .hero-row {
@@ -18,6 +23,8 @@
     flex-direction: row;
     justify-content: space-between;
     height: 100%;
+    background-color: #101010;
+    border-radius: 24px;
 }
 
 .hero-header {
@@ -52,6 +59,7 @@
     background-image: url("../new_main.png");
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 0 24px 0 0;
 }
 
 .hero-img {
@@ -83,6 +91,7 @@
     flex-direction: column;
     align-items: start;
     justify-content: space-between;
+    border-radius: 24px;
 }
 
 .info-container {
@@ -91,15 +100,15 @@
     gap: 50px;
 }
 
+.img-zone {
+    border-radius: 0 24px 24px 0;
+}
+
 .navigation-button.hero-button {
     width: 205px;
 }
 
 @media (max-width: 600px) {
-    .hero {
-        margin-bottom: 16px;
-    }
-
     .hero-row {
         flex-direction: column;
         align-items: center;
@@ -136,8 +145,8 @@
     }
 
     .hero-header {
-        font-size: 40px;
-        line-height: 48px;
+        font-size: 32px;
+        line-height: 40px;
     }
 }
 
@@ -187,8 +196,6 @@
 }
 
 @media (min-width: 1000px) {
-    
-
     .img-zone {
         display: block;
         width: 50%;
@@ -212,27 +219,23 @@
 }
 
 @media (min-width: 1300px) {
-    .hero {
-        height: calc(100vh - 58px);
-        width: 100vw;
-        overflow-y: hidden;
-    }
-
     .hero-card {
         width: 100%;
         height: 100%;
-        background-color: #101010;
-        display: grid;
-        grid-auto-flow: row;
-        grid-template-rows: 5fr 1fr;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        border-radius: 24px;
     }
-
+    
     .hero-row {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         height: 100%;
-    }
+        background-color: #101010;
+        border-radius: 24px;
+    }    
 
     .hero-header {
         font-family: Manrope;
