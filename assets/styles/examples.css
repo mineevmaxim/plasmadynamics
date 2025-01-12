@@ -233,6 +233,11 @@
         width: 44px;
         height: 44px;
     }
+
+    .slider-img {
+        width: 100%;
+        object-fit: contain;
+    }
 }
 
 @media (min-width: 600px) {
@@ -284,6 +289,11 @@
     .bttn-scroll-next {
         width: 44px;
         height: 44px;
+    }
+
+    .slider-img {
+        width: 100%;
+        object-fit: contain;
     }
 }
 
