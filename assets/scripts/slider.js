@@ -20,11 +20,13 @@ function nextSlide() {
     prevbutton.disabled = false
     
     firstSlideIndex += 1;
+    console.log(firstSlideIndex)
     showSlides(firstSlideIndex);
     if (firstSlideIndex >= count) {
         nextbutton.disabled = true;
-        return
+        return firstSlideIndex
     }
+    return firstSlideIndex
 
 }
 
@@ -35,8 +37,9 @@ function previousSlide() {
     showSlides(firstSlideIndex);
     if (firstSlideIndex <= 1) {
         prevbutton.disabled = true;
-        return
+        return firstSlideIndex
     }
+    return firstSlideIndex
 }
 
 
@@ -44,7 +47,6 @@ function showSlides(n) {
     console.log(window.innerWidth)
     if((window.innerWidth < 1000))
     {
-    console.log(1)
     for (let slide of slides) {
         slide.style.display = "none"; // Скрываем все слайды
     }
@@ -56,7 +58,6 @@ function showSlides(n) {
     }
     else
     {
-        console.log(1)
         for (let slide of slides) {
             slide.style.display = "none"; // Скрываем все слайды
         }
@@ -92,8 +93,14 @@ function handleTouchMove(evt) {
     if (!startX) return; // Если не получена начальная позиция, завершаем функцию
 
     const currentX = evt.touches[0].clientX; // Получаем текущую позицию по оси X
-    const xDiff = startX - currentX; // Разница между начальной и текущей позицией
-
+    let xDiff = startX - currentX; // Разница между начальной и текущей позицией
+    if (xDiff > 100){
+        xDiff = 100
+    }
+    if (xDiff < -100)
+    {
+        xDiff = -100
+    }
     // Устанавливаем сдвиг только для контейнера изображения текущего слайда
     const activeSlide = slides[firstSlideIndex - 1]; // Получаем текущий слайд
     const imgContainer = activeSlide.querySelector('.img-cont'); // Получаем контейнер для изображения
@@ -106,10 +113,13 @@ function handleTouchEnd(evt) {
     const xDiff = startX - endX; // Разница между начальной и конечной позицией
 
     if (Math.abs(xDiff) > 50) { // Проверяем свайп
-        if (xDiff > 0) {
+        if (xDiff > 0 && firstSlideIndex < count) {
             nextSlide(); // Свайп влево, след. слайд
         } else {
+            if(firstSlideIndex > 0)
+            {
             previousSlide(); // Свайп вправо, предыдущий слайд
+            }
         }
     }
 
@@ -121,3 +131,4 @@ function handleTouchEnd(evt) {
     
     startX = null; // Сбрасываем начальную позицию
 }
+
