@@ -214,6 +214,7 @@
         justify-content: space-between;
         height: initial;
         align-content: space-between;
+        height: 85vh;
     }
 
     .hero-header {
