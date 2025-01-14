@@ -20,7 +20,6 @@ function nextSlide() {
     prevbutton.disabled = false
     
     firstSlideIndex += 1;
-    console.log(firstSlideIndex)
     showSlides(firstSlideIndex);
     if (firstSlideIndex >= count) {
         nextbutton.disabled = true;
@@ -109,14 +108,18 @@ function handleTouchMove(evt) {
 
 // Обработка завершения касания
 function handleTouchEnd(evt) {
+    const activeSlide = slides[firstSlideIndex - 1];
+    const imgContainer = activeSlide.querySelector('.img-cont');
+    imgContainer.style.transition = "transform 0.3s ease"; // Включаем анимацию
+    imgContainer.style.transform = "translateX(0)";
     const endX = evt.changedTouches[0].clientX; // Получаем конечную позицию по оси X
     const xDiff = startX - endX; // Разница между начальной и конечной позицией
-
+    console.log(firstSlideIndex)
     if (Math.abs(xDiff) > 50) { // Проверяем свайп
-        if (xDiff > 0 && firstSlideIndex < count-1) {
+        if (xDiff < 0 && firstSlideIndex < count) {
             nextSlide(); // Свайп влево, след. слайд
         } else {
-            if(firstSlideIndex > 1)
+            if(firstSlideIndex > 1 && xDiff > 0)
             {
             previousSlide(); // Свайп вправо, предыдущий слайд
             }
@@ -124,8 +127,8 @@ function handleTouchEnd(evt) {
     }
 
     // Возвращаем изображение на место
-    const activeSlide = slides[firstSlideIndex - 1]; // Получаем текущий слайд
-    const imgContainer = activeSlide.querySelector('.img-cont'); // Получаем контейнер для изображения
+    activeSlide = slides[firstSlideIndex - 1]; // Получаем текущий слайд
+    imgContainer = activeSlide.querySelector('.img-cont'); // Получаем контейнер для изображения
     imgContainer.style.transition = "transform 0.3s ease"; // Включаем анимацию
     imgContainer.style.transform = "translateX(0)"; // Возвращаем на исходную позицию
     
