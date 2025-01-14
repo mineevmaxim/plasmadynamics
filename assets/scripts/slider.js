@@ -14,6 +14,7 @@ sliderCont.addEventListener('touchend', handleTouchEnd);
 sliderCont.addEventListener('touchmove', handleTouchMove);
 
 previousSlide(firstSlideIndex);
+showSlides(firstSlideIndex)
 
 function nextSlide() {
     prevbutton.disabled = false
