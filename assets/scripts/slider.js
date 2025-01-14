@@ -1,52 +1,13 @@
-// let firstSlideIndex = 1
-// let secondSlideIndex = 2
-// let count = document.getElementsByClassName("examples-card__content-right__item").length
-
-// showSlides(firstSlideIndex, secondSlideIndex)
-
-// function nextSlide() {
-//     firstSlideIndex = secondSlideIndex
-//     secondSlideIndex += 1
-//     if(secondSlideIndex > count)
-//     {
-//         secondSlideIndex = 1
-//     }
-//     showSlides(firstSlideIndex, secondSlideIndex);
-// }
-
-// function previousSlide() {
-//     secondSlideIndex = firstSlideIndex
-//     firstSlideIndex -= 1
-//     if(firstSlideIndex < 1)
-//     {
-//         firstSlideIndex = count
-//     }
-//     showSlides(firstSlideIndex, secondSlideIndex);  
-// }
-
-// function showSlides(n, m) {
-
-//     let slides = document.getElementsByClassName("examples-card__content-right__item");
-
-//     for (let slide of slides) {
-//         slide.style.display = "none";
-//     }
-
-//     slides[n - 1].style.display = "flex";
-//     slides[m - 1].style.display = "flex";    
-// }
-
-
-
 let firstSlideIndex = 1;
-let count = document.getElementsByClassName(
-    "examples-card__content-right__item"
-).length;
-
+let count = document.getElementsByClassName("examples-card__content-right__item").length;
+let startX; // Начальная позиция касания
 const sliderCont = document.querySelector('.examples-card__content-right');
-sliderCont.addEventListener('touchstart', handleTouchStart, false);
-sliderCont.addEventListener('touchmove', handleTouchMove, false);
-let currentSlide
+const slides = document.getElementsByClassName("examples-card__content-right__item");
+
+// Добавляем обработчики событий
+sliderCont.addEventListener('touchstart', handleTouchStart);
+sliderCont.addEventListener('touchend', handleTouchEnd);
+sliderCont.addEventListener('touchmove', handleTouchMove);
 
 showSlides(firstSlideIndex);
 
@@ -67,31 +28,40 @@ function previousSlide() {
 }
 
 function showSlides(n) {
-    let slides = document.getElementsByClassName(
-        "examples-card__content-right__item"
-    );
-
     for (let slide of slides) {
-        slide.style.display = "none";
+        slide.style.display = "none"; // Скрываем все слайды
     }
-
-    slides[n - 1].style.display = "flex";
-    currentSlide = slides[n - 1]
+    slides[n - 1].style.display = "flex"; // Показываем активный слайд
 }
 
+// Обработка начала касания
 function handleTouchStart(evt) {
     const firstTouch = evt.touches[0];
-    console.log(firstTouch)
     startX = firstTouch.clientX; // Получаем начальную позицию по оси X
+    for (let slide of slides) {
+        slide.querySelector('.img-cont').style.transition = "none"; // Отключаем переход для мгновенного изменения
+    }
 }
 
+// Обработка перемещения
 function handleTouchMove(evt) {
-    if (!startX) return; // Если не получена начальная позиция, завершить функцию
+    if (!startX) return; // Если не получена начальная позиция, завершаем функцию
 
-    let x = evt.touches[0].clientX; // Получаем позицию касания по оси X
-    let xDiff = startX - x; // Разница между начальной и текущей позицией
+    const currentX = evt.touches[0].clientX; // Получаем текущую позицию по оси X
+    const xDiff = startX - currentX; // Разница между начальной и текущей позицией
 
-    if (Math.abs(xDiff) > 50) { // Если разница больше 50 пикселей
+    // Устанавливаем сдвиг только для контейнера изображения текущего слайда
+    const activeSlide = slides[firstSlideIndex - 1]; // Получаем текущий слайд
+    const imgContainer = activeSlide.querySelector('.img-cont'); // Получаем контейнер для изображения
+    imgContainer.style.transform = `translateX(${-xDiff}px)`; // Применяем сдвиг к контейнеру изображения
+}
+
+// Обработка завершения касания
+function handleTouchEnd(evt) {
+    const endX = evt.changedTouches[0].clientX; // Получаем конечную позицию по оси X
+    const xDiff = startX - endX; // Разница между начальной и конечной позицией
+
+    if (Math.abs(xDiff) > 50) { // Проверяем свайп
         if (xDiff > 0) {
             nextSlide(); // Свайп влево, след. слайд
         } else {
@@ -99,5 +69,11 @@ function handleTouchMove(evt) {
         }
     }
 
+    // Возвращаем изображение на место
+    const activeSlide = slides[firstSlideIndex - 1]; // Получаем текущий слайд
+    const imgContainer = activeSlide.querySelector('.img-cont'); // Получаем контейнер для изображения
+    imgContainer.style.transition = "transform 0.3s ease"; // Включаем анимацию
+    imgContainer.style.transform = "translateX(0)"; // Возвращаем на исходную позицию
+    
     startX = null; // Сбрасываем начальную позицию
 }
