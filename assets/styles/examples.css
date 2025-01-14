@@ -101,14 +101,29 @@
     user-select: none;
 }
 
+
+@media (hover: hover) {
 .bttn-scroll-prev:hover,
 .bttn-scroll-next:hover {
     background-color: #ff6a00;
     cursor: pointer;
 }
+}
+
+@media (hover: none) {
+    .bttn-scroll-prev:active,
+    .bttn-scroll-next:active {
+        background-color: #ff6a00;
+        cursor: pointer;
+    }
+    }
 
 .left-button {
     transform: rotate(180deg);
+}
+
+.bttn-scroll-next:disabled,.bttn-scroll-prev:disabled {
+    background-color: #848484;
 }
 
 .btt-container {
@@ -120,6 +135,16 @@
 }
 
 .examples-card__content-right__item {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+.examples-card__content-right__item {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+.examples-card__content-left {
     animation-name: fade;
     animation-duration: 2s;
 }

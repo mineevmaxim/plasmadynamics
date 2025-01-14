@@ -1,37 +1,75 @@
-let firstSlideIndex = 1;
+let firstSlideIndex = 2;
 let count = document.getElementsByClassName("examples-card__content-right__item").length;
 let startX; // Начальная позиция касания
 const sliderCont = document.querySelector('.examples-card__content-right');
 const slides = document.getElementsByClassName("examples-card__content-right__item");
+const leftCont = document.getElementsByClassName("examples-card__content-left");
+const slideWidthcon = document.getElementsByClassName('examples-card__content-right');
+let nextbutton  = document.getElementsByClassName('bttn-scroll-next')[0];
+let prevbutton = document.getElementsByClassName('bttn-scroll-prev')[0];
 
 // Добавляем обработчики событий
 sliderCont.addEventListener('touchstart', handleTouchStart);
 sliderCont.addEventListener('touchend', handleTouchEnd);
 sliderCont.addEventListener('touchmove', handleTouchMove);
 
-showSlides(firstSlideIndex);
+previousSlide(firstSlideIndex);
 
 function nextSlide() {
+    prevbutton.disabled = false
+    
     firstSlideIndex += 1;
-    if (firstSlideIndex > count) {
-        firstSlideIndex = 1;
-    }
     showSlides(firstSlideIndex);
+    if (firstSlideIndex >= count) {
+        nextbutton.disabled = true;
+        return
+    }
+
 }
 
 function previousSlide() {
+    nextbutton.disabled = false;
+    
     firstSlideIndex -= 1;
-    if (firstSlideIndex < 1) {
-        firstSlideIndex = count;
-    }
     showSlides(firstSlideIndex);
+    if (firstSlideIndex <= 1) {
+        prevbutton.disabled = true;
+        return
+    }
 }
 
+
 function showSlides(n) {
+    if((window.innerWidth < 1000))
+    {
     for (let slide of slides) {
         slide.style.display = "none"; // Скрываем все слайды
     }
     slides[n - 1].style.display = "flex"; // Показываем активный слайд
+    leftCont[0].style.display = "flex";
+    slideWidthcon[0].style.width = "100%";
+    }
+    else
+    {
+        for (let slide of slides) {
+            slide.style.display = "none"; // Скрываем все слайды
+        }
+        if (n == 1)
+        {
+            leftCont[0].style.display = "flex";
+            slides[n - 1].style.display = "flex";
+            slideWidthcon[0].style.width = "32%";
+        }
+        else{
+            if(n==count)
+            {n-=1}
+            leftCont[0].style.display = "none";
+            slides[n - 2].style.display = "flex";
+            slides[n - 1].style.display = "flex";
+            slides[n].style.display = "flex";
+            slideWidthcon[0].style.width = "100%";
+        }
+    }
 }
 
 // Обработка начала касания
