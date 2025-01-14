@@ -40,17 +40,22 @@ function previousSlide() {
 
 
 function showSlides(n) {
+    console.log(window.innerWidth)
     if((window.innerWidth < 1000))
     {
+    console.log(1)
     for (let slide of slides) {
         slide.style.display = "none"; // Скрываем все слайды
     }
+    slideWidthcon[0].style.width = "100%";
     slides[n - 1].style.display = "flex"; // Показываем активный слайд
     leftCont[0].style.display = "flex";
-    slideWidthcon[0].style.width = "100%";
+
+    
     }
     else
     {
+        console.log(1)
         for (let slide of slides) {
             slide.style.display = "none"; // Скрываем все слайды
         }
