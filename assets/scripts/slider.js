@@ -113,10 +113,10 @@ function handleTouchEnd(evt) {
     const xDiff = startX - endX; // Разница между начальной и конечной позицией
 
     if (Math.abs(xDiff) > 50) { // Проверяем свайп
-        if (xDiff > 0 && firstSlideIndex < count) {
+        if (xDiff > 0 && firstSlideIndex < count-1) {
             nextSlide(); // Свайп влево, след. слайд
         } else {
-            if(firstSlideIndex > 0)
+            if(firstSlideIndex > 1)
             {
             previousSlide(); // Свайп вправо, предыдущий слайд
             }
