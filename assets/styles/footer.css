@@ -259,19 +259,3 @@ li {
         margin-right: 64px;
     }
 }
-
-@media (min-width: 1600px) {
-    .footer-content__info-nav {
-        padding-right: 32px;
-    }
-
-    .footer-content__info-nav {
-        margin-right: 64px;
-    }
-}
-
-@media (min-width: 1800px) {
-    .footer-content__info-nav {
-        padding-right: 32px;
-    }
-}

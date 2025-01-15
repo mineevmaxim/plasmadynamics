@@ -275,11 +275,29 @@
     }
 }
 
-@media (min-width: 1300px) {
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #28a745;
+    color: white;
+    padding: 16px 24px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    z-index: 100000000;
+    font-size: 24px;
 }
 
-@media (min-width: 1600px) {
+.notification.show {
+    opacity: 1;
+    visibility: visible;
 }
 
-@media (min-width: 1800px) {
+button:disabled {
+    background-color: #cccccc;
+    pointer-events: none;
+    cursor: not-allowed;
 }

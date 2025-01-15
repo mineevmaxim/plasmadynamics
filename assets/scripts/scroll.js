@@ -1,10 +1,10 @@
 const headerButton = document.getElementById("header-button");
 const heroButton = document.getElementById("hero-button");
 const headerLogo = document.getElementById("header-logo");
-const form = document.getElementById("form");
+const form1 = document.getElementById("form");
 
 const scrollToForm = () => {
-    form.scrollIntoView({ block: "center", behavior: "smooth" });
+    form1.scrollIntoView({ block: "center", behavior: "smooth" });
 };
 
 const scrollToTop = () => {
