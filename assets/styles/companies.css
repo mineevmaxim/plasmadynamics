@@ -41,7 +41,7 @@
 
     overflow-x: hidden;
     background-color: #101010;
-    margin-bottom: 16px;
+    /* margin-bottom: 16px; */
 }
 
 .wrapper_el {
